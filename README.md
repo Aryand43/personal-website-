@@ -24,7 +24,7 @@ This website highlights my professional experience as a software engineer with e
 If you would like to run this website locally, follow these steps:
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Aryand43/personal-website.git
+   git clone https://github.com/Aryand43/personal-website-.git
    ```
 2. Navigate into the project directory:
    ```bash
