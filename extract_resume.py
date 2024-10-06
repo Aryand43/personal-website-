@@ -32,6 +32,10 @@ experience = extract_section_text(resume_content, "Relevant Experience", "Skills
 skills = extract_section_text(resume_content, "Skills", "Honours and Awards")
 projects = extract_section_text(resume_content, "Academic Projects", "Qualifications")
 
+# Fallback extraction for undefined sections
+if not skills:
+    skills = extract_section_text(resume_content, "Skills")
+
 # Organize the data in a structured format
 resume_data = {
     "Profile Summary": profile_summary,
