@@ -139,3 +139,24 @@ footer {
 #contact-form button:hover {
     background-color: #555;
 }
+
+/* Experience Section Styles */
+#experience-list li {
+    background: #f8f8f8;
+    margin: 0.5rem 0;
+    padding: 0.8rem;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+
+#experience-list strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Optional for better readability */
+#experience-list li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}

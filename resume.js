@@ -19,11 +19,17 @@
                     educationSection.appendChild(listItem);
                 });
 
-                // Experience Section
+                // Experience Section (Modified for formatting)
                 let experienceSection = document.getElementById("experience-list");
                 data["Experience"].forEach(exp => {
                     let listItem = document.createElement("li");
-                    listItem.innerText = exp;
+
+                    // Apply formatting by searching for specific keywords
+                    let formattedText = exp
+                        .replace(/^(.*?)\b(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\b.*? – .*$/i, "<strong>$1</strong>")
+                        .replace(/([A-Za-z\s]+):/, "<strong>$1:</strong>"); // Makes positions and dates bold
+
+                    listItem.innerHTML = formattedText;
                     experienceSection.appendChild(listItem);
                 });
 
@@ -34,18 +40,9 @@
                     skillDiv.classList.add("skill");
 
                     let skillName = document.createElement("p");
-                    skillName.innerText = skill.name;
+                    skillName.innerText = skill; // Directly display each skill as text
                     skillDiv.appendChild(skillName);
 
-                    let skillBar = document.createElement("div");
-                    skillBar.classList.add("skill-bar");
-
-                    let skillLevel = document.createElement("div");
-                    skillLevel.classList.add("skill-level");
-                    skillLevel.style.width = skill.level;
-                    skillBar.appendChild(skillLevel);
-
-                    skillDiv.appendChild(skillBar);
                     skillsContainer.appendChild(skillDiv);
                 });
 
