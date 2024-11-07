@@ -11,10 +11,19 @@
     ],
     "Experience": [
         "Relevant Experience",
-        " Stealth San Francisco, California, USA (Remote)",
-        "AI Startup Developer Oct 2024 \u2013 Present",
-        "\u25e6 Startup Mentorship: Working with Jeff Wilson (2x founder, YC alum, Harvard fellow, former professor/dean)",
+        " Global ITN Singapore",
+        "Incoming Intern Jan 2025 \u2013 July 2025",
+        "\u25e6 IT intern: Incoming intern at Global ITN, a Singapore-based IT services firm delivering tailored and cost-effective tech solutions across",
+        "Asia, Africa, and Europe.",
+        " Stealth Singapore (Remote)",
+        "Founder Oct 2024 \u2013 Present",
+        "\u25e6 Startup Mentorship: Collaborating with Erico Tjoa, former NTU postdoctoral scholar and Stanford AI researcher.",
         "\u25e6 Lead Developer: Responsible for entire codebase of pre-seed AI startup",
+        " Institute of Electrical and Electronics Engineers (IEEE) Global (Remote)",
+        "Student Member Oct 2024 \u2013 Present",
+        "\u25e6 Global Technical Engagement: Participating in global technical communities and events to stay updated with advancements in",
+        "technology and engineering.",
+        "\u25e6 IEEE Professional Development: Engaged in professional development through IEEE resources and networking opportunities.",
         " RevisionDojo Singapore",
         "Software Engineer Aug 2024 \u2013 Present",
         "\u25e6 Web Scraper Development: Built a scraper using Node.js, Axios, and Cheerio to extract GMAT and A-Level curriculum data.",
@@ -22,7 +31,7 @@
         "\u25e6 Data Structuring: Organized scraped data into a structured JSON format for better content management.",
         "\u25e6 Code Optimization: Enhanced code performance and maintainability for scraping and description generation processes.",
         " BlueWave Technologies Singapore",
-        "Software Engineering Intern May 2024 \u2013 Present",
+        "Software Engineering Intern/Consultant May 2024 \u2013 Present",
         "\u25e6 Node-RED and OpenSCAD: Learning Node-RED and OpenSCAD for battery monitoring systems. Focused on innovative solutions for",
         "industrial backup power systems.",
         " CampusAI Singapore",
@@ -45,6 +54,12 @@
         "Content Manager and Lecturer May 2021 \u2013 May 2022",
         "\u25e6 Teaching: Taught machine learning fundamentals, including types of learning, regression, and activation functions."
     ],
+    "Additional Experience": [
+        "Additional Experience",
+        " National Service Singapore",
+        "Singapore Police Force Nov 2022 \u2013 Nov 2024",
+        "\u25e6 National Service: Completed mandatory service, strengthening discipline and analytical thinking, key skills for quantitative research."
+    ],
     "Skills": [
         "Skills",
         " Computer Skills: Java, SQL, Python, HTML, CSS, R, LaTeX, Node.js, Node-RED",
@@ -52,6 +67,12 @@
         " Tools and Technologies: AWS, Amazon S3, TCP Dump, Cisco Packet Tracer, MATLAB, Squarespace, Microsoft Office",
         " Financial Skills: Bloomberg Terminal, Profitability Ratios, Liquidity Ratios, Financial Analysis, Securities Research",
         " Other Skills: Web Scraping with Python"
+    ],
+    "Honours and Awards": [
+        "Honours and Awards",
+        " Academic Merit: Received for the following IB subjects: IBHL Computer Science, IBHL Information Technology in a Global Society",
+        " Extended Essay: Certificate of Recognition from Overseas Family School - Demonstrated Excellence in the Extended Essay Exhibition.",
+        "1"
     ],
     "Projects": [
         "Academic Projects",
@@ -67,7 +88,33 @@
         "management and financial tools, including SWOT, profitability ratios, market share analysis, STEEPLE, and Ansoff Matrix.Employed Google",
         "Finance on Google Sheets to generate financial figures from NASDAQ for Apple and Shazam.",
         "\u2022 Financial and Mathematics Calculator - Java & JavaFX: Designed a GUI using JavaFX for a versatile calculator and implemented",
-        "arithmetic, financial, and statistical calculations.",
-        "1"
+        "arithmetic, financial, and statistical calculations."
+    ],
+    "Qualifications": [
+        "Qualifications",
+        " Artificial Intelligence & Machine Learning: AIEssentials(Intel), IntroductiontoGenerativeAI(GoogleCloud),AI-PoweredChestDisease",
+        "Detection (Coursera), Neural Networks and Deep Learning, Improving Deep Neural Networks, Machine Learning Specialization",
+        "(DeepLearning.AI), Get Ready for Generative AI (LinkedIn)",
+        " Data Science & Analytics: Understanding Basic SQL Syntax (Coursera), Clustering, Principal Component Analysis, Time Series Analysis",
+        "(Great Learning), Data Analytics for Investment Management (Coursera), Using Basic Formulas and Functions in Microsoft Excel (Coursera)",
+        " Deep Learning & Neural Networks: Machine Learning Specialization (DeepLearning.AI), Neural Networks and Deep Learning",
+        "(DeepLearning.AI), Improving Deep Neural Networks (DeepLearning.AI), Introduction to Computer Vision (Great Learning), Image",
+        "Classification with ChatGPT (Coursera)",
+        " Programming & Software Development: Python Programming (Coursera), JavaScript and TypeScript Development (Self-Learning), Web",
+        "Scraping with Python (Great Learning), MATLAB Onramp & App Building (MathWorks), ChatGPT 4, Introduction to Networks and Cisco",
+        "Devices (Coursera), Circuits for Beginners (National University of Singapore)",
+        " Cloud Computing & Software Tools: AWS S3 Basics (Coursera), Supabase for Data Management (Practical Experience), Preparation for",
+        "Job Interviews (Coursera), Introduction to Microsoft Excel (Coursera), Using Typeform for Market Research (Coursera)",
+        " Financial Analysis & Stock Market Strategies: Constructing Stock Market Indices (Coursera), Technical Stock Charting with R",
+        "(Coursera), Valuation Techniques: WACC Valuation, Dividend Discount Model, Analyzing Apple\u2019s Stock (Bloomberg Terminal, Coursera),",
+        "Markowitz Portfolio Optimization (Coursera)",
+        " Investment Strategies & Portfolio Management: Seeking Investment Alpha (Coursera), Markowitz Portfolio Optimization (Coursera),",
+        "Dividend Discount Model (Coursera), Financial Planning and Wealth Management (Coursera), Commercial Banking (Corporate Finance",
+        "Institute)",
+        " Economics & Financial Engineering: Modern Monetary Theory (Coursera), Economics of Money and Banking (Coursera), Derivatives and",
+        "Risk Management (Coursera), Financial Engineering (Coursera)",
+        " Electronics & Semiconductor Knowledge: Circuits for Beginners (National University of Singapore), Semiconductors for Beginners",
+        "(National University of Singapore), Introduction to Networks and Cisco Devices (Coursera)",
+        "2"
     ]
 }

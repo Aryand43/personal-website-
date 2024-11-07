@@ -8,10 +8,15 @@ body {
 }
 
 header {
-    background: #333;
+    background: linear-gradient(135deg, #333, #555);
     color: #fff;
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
+}
+
+header h1 {
+    margin-top: 0;
+    font-size: 2.5rem;
 }
 
 main {
@@ -20,6 +25,7 @@ main {
     margin: auto;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .navbar {
@@ -43,6 +49,11 @@ main {
 
 .navbar a:hover {
     background-color: #555;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 2rem;
 }
 
 ul {
@@ -63,7 +74,7 @@ ul li {
 
 .skill-bar {
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #e0e0e0;
     border-radius: 5px;
     overflow: hidden;
 }
@@ -72,7 +83,7 @@ ul li {
     height: 20px;
     background-color: #00bcd4;
     width: 0;
-    transition: width 1s;
+    transition: width 1s ease-in-out;
 }
 
 footer {
