@@ -1,104 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Dutt - Personal Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="resume.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true,
-                mirror: false
-            });
-        });
-    </script>
+    <title>Aryan Dutt's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { font-family: "Roboto", sans-serif; background-color: #f0f0f0; }
+        .avatar { width: 30%; border-radius: 50%; }
+        .container { max-width: 1400px; margin: auto; padding: 20px; }
+        .section { background-color: white; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+        .skills-bar { width: 75%; background-color: #4caf50; height: 12px; border-radius: 10px; }
+        .contact-info a { color: #555; text-decoration: none; }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navbar">
-                <li><a href="#profile-summary">Profile</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>I'm Aryan Dutt</h1>
-        <p>Software Engineer specializing in AI, data systems, and IoT technologies.</p>
-    </header>
 
-    <main>
-        <!-- Sections with smooth animations on scroll -->
-        <section id="profile-summary" data-aos="fade-up">
-            <h2>Profile Summary</h2>
-            <p id="profile-content"></p>
-        </section>
+<div class="container">
+    <!-- Profile Section -->
+    <div class="section">
+        <div style="text-align: center;">
+            <img src="imgs/profileimg.png" class="avatar" alt="Aryan Dutt">
+            <h2>Aryan Dutt</h2>
+            <p>Software Engineer | AI/ML Developer | Finance Enthusiast</p>
+            <p>Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> | GitHub: <a href="https://github.com/Aryand43">Aryand43</a> | LinkedIn: <a href="https://www.linkedin.com/in/aryan-dutt-">Aryan Dutt</a></p>
+        </div>
+    </div>
 
-        <section id="education" data-aos="fade-left">
-            <h2>Education</h2>
-            <ul id="education-list"></ul>
-        </section>
+    <!-- Skills Section -->
+    <div class="section">
+        <h3>Skills</h3>
+        <p>Programming: Java, Python, Node.js, JavaScript, C++</p>
+        <div class="skills-bar"></div>
+        <p>Machine Learning: TensorFlow, PyTorch, Scikit-Learn</p>
+        <div class="skills-bar"></div>
+        <p>Web Development: HTML, CSS, Node.js, Supabase</p>
+        <div class="skills-bar"></div>
+        <p>Financial Analysis: Bloomberg Terminal, WACC Valuation, Markowitz Portfolio Optimization</p>
+        <div class="skills-bar"></div>
+    </div>
 
-        <section id="experience" data-aos="fade-right">
-            <h2>Relevant Experience</h2>
-            <ul id="experience-list"></ul>
-        </section>
+    <!-- Experience Section -->
+    <div class="section">
+        <h3>Experience</h3>
+        <h4>Global ITN (Incoming Intern)</h4>
+        <p>IT Intern focused on tailored tech solutions across Asia, Africa, and Europe.</p>
+        
+        <h4>Stealth Startup (Founder)</h4>
+        <p>Leading the development of an AI-driven product with mentorship from Erico Tjoa.</p>
 
-        <section id="skills" data-aos="fade-right">
-            <h2>Skills</h2>
-            <div id="skills-container"></div>
-        </section>
+        <h4>BlueWave Technologies (Software Engineering Intern)</h4>
+        <p>Learning Node-RED and OpenSCAD for battery monitoring systems.</p>
 
-        <section id="projects" data-aos="fade-up">
-            <h2>Projects</h2>
-            <ul id="projects-list"></ul>
-        </section>
+        <h4>RevisionDojo (Software Engineer)</h4>
+        <p>Developed web scraper using Node.js, implemented OpenAI API for data processing.</p>
+    </div>
 
-        <section id="contact" data-aos="fade-up">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-                
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
+    <!-- Projects Section -->
+    <div class="section">
+        <h3>Academic Projects</h3>
+        <ul>
+            <li><b>Assembly Virtual Machine Emulator:</b> Low-level systems programming using C++ and Assembly.</li>
+            <li><b>Video-To-Text Processing:</b> Developed a system using Google Colab and OpenCV for frame extraction and captioning.</li>
+            <li><b>Image-To-Text Processing:</b> Created a Jupyter Notebook for image captioning using advanced LLMs.</li>
+        </ul>
+    </div>
 
-    <button id="back-to-top" onclick="scrollToTop()">Back to Top</button>
+    <!-- Certifications Section -->
+    <div class="section">
+        <h3>Certifications</h3>
+        <ul>
+            <li>AI Essentials (Intel), Neural Networks and Deep Learning (DeepLearning.AI)</li>
+            <li>Financial Analysis with Bloomberg Terminal (Coursera)</li>
+            <li>Introduction to Networks and Cisco Devices (Coursera)</li>
+        </ul>
+    </div>
 
-    <script>
-        window.onscroll = function() {
-            const button = document.getElementById("back-to-top");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        };
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 10px;">
+        <p>© 2024 Aryan Dutt | Built with HTML and CSS | Template adapted from W3Schools</p>
+    </footer>
+</div>
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        document.getElementById("contact-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-        });
-    </script>
 </body>
 </html>
