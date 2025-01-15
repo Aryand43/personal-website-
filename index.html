@@ -8,10 +8,11 @@
     <style>
         :root {
             --primary-color: #4caf50;
-            --background-color: #121212;
-            --text-color: #e0e0e0;
+            --background-color: #0a0a0a;
+            --text-color: #d0d0d0;
             --card-bg: #1e1e1e;
             --accent-color: #ff9800;
+            --highlight-color: #00e676;
         }
 
         body {
@@ -35,13 +36,14 @@
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 3rem;
             margin: 0;
-            color: var(--primary-color);
+            color: var(--highlight-color);
+            animation: glow 1.5s infinite alternate;
         }
 
         header p {
-            font-size: 1rem;
+            font-size: 1.2rem;
             margin: 10px 0;
             font-family: "Source Code Pro", monospace;
         }
@@ -56,14 +58,20 @@
             background: var(--card-bg);
             padding: 20px;
             margin: 20px 0;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1);
+            transition: transform 0.3s ease;
+        }
+
+        .section:hover {
+            transform: scale(1.03);
         }
 
         .section h3 {
             margin-top: 0;
             color: var(--primary-color);
-            border-bottom: 2px solid var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
             display: inline-block;
             padding-bottom: 5px;
         }
@@ -71,17 +79,26 @@
         .skills-bar {
             width: 100%;
             background-color: #333;
-            height: 10px;
+            height: 15px;
             border-radius: 5px;
             overflow: hidden;
-            margin: 10px 0;
+            margin: 15px 0;
         }
 
         .skills-bar span {
             display: block;
             height: 100%;
-            background-color: var(--primary-color);
-            animation: fillBar 1.5s ease-in-out;
+            background-color: var(--highlight-color);
+            animation: fillBar 2s ease-in-out;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px var(--highlight-color), 0 0 20px var(--highlight-color);
+            }
+            to {
+                text-shadow: 0 0 20px var(--highlight-color), 0 0 40px var(--highlight-color);
+            }
         }
 
         @keyframes fillBar {
@@ -131,11 +148,17 @@
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.3s ease;
+            transition: background 0.3s ease, transform 0.3s ease;
         }
 
         .btn:hover {
             background: var(--accent-color);
+            transform: translateY(-3px);
+        }
+
+        .highlight {
+            color: var(--highlight-color);
+            font-weight: bold;
         }
     </style>
 </head>
@@ -144,7 +167,7 @@
 <div class="container">
     <header>
         <h1>Aryan Dutt</h1>
-        <p>Software Engineer | AI/ML Developer | Quantitative Finance Enthusiast</p>
+        <p>Software Engineer | <span class="highlight">AI/ML Developer</span> | Quantitative Finance Enthusiast</p>
         <p>
             Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
             GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
@@ -172,6 +195,7 @@
     <div class="section">
         <h3>Experience</h3>
         <ul>
+            <li><b>Stealth Startup:</b> Co-Founder developing quantitative finance algorithms with advanced mentorship.</li>
             <li><b>BioMetallica:</b> Intern creating computer vision systems for e-waste laboratory processes.</li>
             <li><b>Tagit Pte Ltd:</b> Technology Intern. Contributed to secure, scalable mobile banking solutions.</li>
             <li><b>ServBridge Incorporated:</b> Designed AI-powered chatbot, improving operational efficiency by 40%.</li>
@@ -181,10 +205,9 @@
     <div class="section">
         <h3>Projects</h3>
         <ul>
-            <li><b>Assembly Virtual Machine Emulator:</b> Simulating CPU instructions using C++.</li>
-            <li><b>Video-To-Text Processing:</b> Advanced LLMs for video frame analysis.</li>
+            <li><b>Video-To-Text Processing:</b> Advanced LLMs for video frame analysis. <a href="https://github.com/Aryand43/V2C-llm-project" class="btn">View Repository</a></li>
             <li><b>Portfolio Optimization:</b> Python-based portfolio optimization project. <a href="https://github.com/Aryand43/portfolio-optimization" class="btn">View Repository</a></li>
-            <li><b>Image-to-Text Processing:</b> Jupyter Notebooks for image captioning using Python libraries.</li>
+            <li><b>Image-to-Text Processing:</b> Jupyter Notebooks for image captioning using Python libraries.<a href="https://github.com/Aryand43/V2C-llm-project" class="btn">View Repository</a></li>
         </ul>
     </div>
 
