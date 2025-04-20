@@ -1,237 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aryan Dutt's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #4caf50;
-            --background-color: #0a0a0a;
-            --text-color: #d0d0d0;
-            --card-bg: #1e1e1e;
-            --accent-color: #ff9800;
-            --highlight-color: #00e676;
-        }
-
-        body {
-            font-family: "Roboto", sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            margin: 0;
-            line-height: 1.6;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            text-align: center;
-            padding: 20px 0;
-            border-bottom: 1px solid var(--card-bg);
-        }
-
-        header h1 {
-            font-size: 3rem;
-            margin: 0;
-            color: var(--highlight-color);
-            animation: glow 1.5s infinite alternate;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            font-family: "Source Code Pro", monospace;
-        }
-
-        header a {
-            color: var(--accent-color);
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        .section {
-            background: var(--card-bg);
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 15px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-            transform: scale(1);
-            transition: transform 0.3s ease;
-        }
-
-        .section:hover {
-            transform: scale(1.03);
-        }
-
-        .section h3 {
-            margin-top: 0;
-            color: var(--primary-color);
-            border-bottom: 3px solid var(--primary-color);
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-
-        .skills-bar {
-            width: 100%;
-            background-color: #333;
-            height: 15px;
-            border-radius: 5px;
-            overflow: hidden;
-            margin: 15px 0;
-        }
-
-        .skills-bar span {
-            display: block;
-            height: 100%;
-            background-color: var(--highlight-color);
-            animation: fillBar 2s ease-in-out;
-        }
-
-        @keyframes glow {
-            from {
-                text-shadow: 0 0 10px var(--highlight-color), 0 0 20px var(--highlight-color);
-            }
-            to {
-                text-shadow: 0 0 20px var(--highlight-color), 0 0 40px var(--highlight-color);
-            }
-        }
-
-        @keyframes fillBar {
-            from {
-                width: 0;
-            }
-            to {
-                width: 75%;
-            }
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin: 10px 0;
-        }
-
-        ul li b {
-            color: var(--accent-color);
-        }
-
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 0.9rem;
-            border-top: 1px solid var(--card-bg);
-            padding: 10px;
-        }
-
-        footer p {
-            margin: 5px 0;
-        }
-
-        footer a {
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-
-        .btn {
-            display: inline-block;
-            background: var(--primary-color);
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background 0.3s ease, transform 0.3s ease;
-        }
-
-        .btn:hover {
-            background: var(--accent-color);
-            transform: translateY(-3px);
-        }
-
-        .highlight {
-            color: var(--highlight-color);
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aryan Dutt | AI Systems Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #4caf50;
+      --background-color: #0a0a0a;
+      --text-color: #d0d0d0;
+      --card-bg: #1e1e1e;
+      --accent-color: #ff9800;
+      --highlight-color: #00e676;
+    }
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      margin: 0;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    header {
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--card-bg);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      color: var(--highlight-color);
+      animation: glow 1.5s infinite alternate;
+    }
+    header p, footer p {
+      font-size: 1.1rem;
+      font-family: "Source Code Pro", monospace;
+    }
+    header a, footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: linear-gradient(135deg, #0a0a0a, var(--card-bg));
+      margin: 20px 0;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+    .hero-text {
+      max-width: 60%;
+    }
+    .hero-text h2 {
+      font-size: 1.8rem;
+      color: var(--highlight-color);
+    }
+    .section {
+      background: var(--card-bg);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 15px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+    .section h3 {
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+    .btn {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 5px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-left: 10px;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li {
+      margin: 10px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid var(--card-bg);
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
+  <div class="container">
     <header>
-        <h1>Aryan Dutt</h1>
-        <p>Software Engineer | <span class="highlight">AI/ML Developer</span> | Quantitative Finance Enthusiast</p>
-        <p>
-            Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
-            GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
-            LinkedIn: <a href="https://www.linkedin.com/in/aryan-dutt-" target="_blank">Aryan Dutt</a>
-        </p>
+      <h1>Aryan Dutt</h1>
+      <p>CTO @ Stealth AI | MIT CSAIL Collaborator | AI Systems Engineer</p>
+      <p>Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
+         GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
+         LinkedIn: <a href="https://www.linkedin.com/in/aryan-dutt-" target="_blank">Aryan Dutt</a>
+      </p>
     </header>
 
-    <div class="section">
-        <h3>Profile</h3>
-        <p>Ambitious computer scientist with a deep foundation in mathematics, programming, and algorithmic problem-solving. Proficient in building high-performance models and scalable systems to address complex challenges in financial markets and technology. Passionate about leveraging advanced computational methods and machine learning to optimize trading strategies and drive innovation in quantitative finance.</p>
+    <div class="hero">
+      <div class="hero-text">
+        <h2>I engineer real-world AI systems across HPC, healthtech, and finance.</h2>
+        <p>Currently working on federated NLP training, computer vision for microstructure mapping, and AI-powered diagnostic systems. Passionate about building deployable intelligence with global collaborators.</p>
+      </div>
+      <img src="images/rocket-svgrepo-com.svg" alt="Rocket" width="160" />
     </div>
 
     <div class="section">
-        <h3>Skills</h3>
-        <p>Programming: Java, Python, JavaScript, Node.js, C++, SQL</p>
-        <div class="skills-bar"><span style="width: 90%;"></span></div>
-        <p>Machine Learning: TensorFlow, PyTorch, Scikit-Learn, OpenCV</p>
-        <div class="skills-bar"><span style="width: 85%;"></span></div>
-        <p>Web Development: HTML, CSS, Node.js, Supabase</p>
-        <div class="skills-bar"><span style="width: 80%;"></span></div>
-        <p>Financial Analysis: Bloomberg Terminal, WACC Valuation, Markowitz Portfolio Optimization</p>
-        <div class="skills-bar"><span style="width: 75%;"></span></div>
+      <h3>Experience</h3>
+      <ul>
+        <li><b>MIT CSAIL:</b> Research collaboration on HPC + AI for matrix decomposition.</li>
+        <li><b>NTU SC3DP:</b> Machine learning for additive manufacturing and microstructure optimization.</li>
+        <li><b>SEAQR:</b> AI for marine robotics and anomaly detection (Harvard-linked).</li>
+        <li><b>Stealth Startup (ACE.SG):</b> CTO building skincare diagnostic AI.</li>
+        <li><b>Tagit, BioMetallica, ServBridge:</b> AI, CV, and full-stack engineering roles in fintech and sustainability.</li>
+      </ul>
     </div>
 
     <div class="section">
-        <h3>Experience</h3>
-        <ul>
-            <li><b>Stealth Startup:</b> Co-Founder developing quantitative finance algorithms with advanced mentorship.</li>
-            <li><b>BioMetallica:</b> Intern creating computer vision systems for e-waste laboratory processes.</li>
-            <li><b>Tagit Pte Ltd:</b> Technology Intern. Contributed to secure, scalable mobile banking solutions.</li>
-            <li><b>ServBridge Incorporated:</b> Designed AI-powered chatbot, improving operational efficiency by 40%.</li>
-        </ul>
+      <h3>Featured Projects</h3>
+      <ul>
+        <li><b>SmartScanGPT:</b> OCR + LLM system for generating investor-ready reports. <a class="btn" href="#">Demo</a></li>
+        <li><b>Portfolio Optimization:</b> Multi-asset Sharpe/Omega simulator with Monte Carlo. <a class="btn" href="https://github.com/Aryand43/Portfolio-Optimization">GitHub</a></li>
+        <li><b>V2C Captioning Pipeline:</b> Video + Image + LLM captioning via VideoLLM. <a class="btn" href="https://github.com/Aryand43/V2C-llm-project">GitHub</a></li>
+        <li><b>Whisper Federated Training:</b> Multi-node training using Flower + Whisper v3. <a class="btn" href="#">Coming Soon</a></li>
+      </ul>
     </div>
 
     <div class="section">
-        <h3>Projects</h3>
-        <ul>
-            <li><b>Video-To-Text Processing:</b> Advanced LLMs for video frame analysis. <a href="https://github.com/Aryand43/V2C-llm-project" class="btn">View Repository</a></li>
-            <li><b>Portfolio Optimization:</b> Python-based portfolio optimization project. <a href="https://github.com/Aryand43/portfolio-optimization" class="btn">View Repository</a></li>
-            <li><b>Image-to-Text Processing:</b> Jupyter Notebooks for image captioning using Python libraries.<a href="https://github.com/Aryand43/V2C-llm-project" class="btn">View Repository</a></li>
-        </ul>
+      <h3>Skills</h3>
+      <p><b>Languages:</b> Python, Java, C++, JavaScript, SQL, LaTeX</p>
+      <p><b>ML & AI:</b> Whisper, DeepSeek, PyTorch, TensorFlow, Sklearn, OpenCV, EasyOCR</p>
+      <p><b>Infra & Tools:</b> Streamlit, Jupyter, Node.js, Supabase, GitHub, Flower, AWS</p>
     </div>
 
     <div class="section">
-        <h3>Honors and Awards</h3>
-        <ul>
-            <li><b>Academic Merit Certificate:</b> Outstanding performance in IBHL Computer Science and ITGS.</li>
-            <li><b>Extended Essay Recognition:</b> Demonstrated excellence in research and analysis.</li>
-        </ul>
+      <h3>Certifications</h3>
+      <ul>
+        <li>AI Essentials (Intel), Machine Learning Specialization (DeepLearning.AI)</li>
+        <li>Portfolio Optimization, Cryptography, NLP with ChatGPT, Blockchain @ INSEAD</li>
+      </ul>
     </div>
 
     <div class="section">
-        <h3>Certifications</h3>
-        <ul>
-            <li>AI Essentials (Intel), Neural Networks and Deep Learning (DeepLearning.AI).</li>
-            <li>Markowitz Portfolio Optimization (Coursera), AWS S3 Basics (Coursera).</li>
-        </ul>
+      <h3>Honors</h3>
+      <ul>
+        <li>Recognized for top performance in IBHL CS + ITGS</li>
+        <li>Extended Essay Exhibition Distinction (Business + Strategy)</li>
+      </ul>
     </div>
 
     <footer>
-        <p>© 2025 Aryan Dutt | Built with modern HTML and CSS</p>
-        <p><a href="#">Back to Top</a></p>
+      <p>© 2025 Aryan Dutt | Built from scratch with HTML/CSS</p>
+      <p><a href="#top">Back to Top</a></p>
     </footer>
-</div>
-
+  </div>
 </body>
 </html>
