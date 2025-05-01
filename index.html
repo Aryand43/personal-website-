@@ -14,68 +14,89 @@
       --accent-color: #ff9800;
       --highlight-color: #00e676;
     }
+
     body {
       font-family: "Roboto", sans-serif;
       background-color: var(--background-color);
       color: var(--text-color);
       margin: 0;
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      letter-spacing: 0.2px;
     }
+
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
+
     header {
       text-align: center;
       padding: 20px 0;
       border-bottom: 1px solid var(--card-bg);
     }
+
     header h1 {
       font-size: 3.5rem;
       color: var(--highlight-color);
       animation: glow 1.5s infinite alternate;
+      letter-spacing: 2px;
+      font-weight: 700;
     }
+
     header p, footer p {
       font-size: 1.1rem;
       font-family: "Source Code Pro", monospace;
     }
+
     header a, footer a {
       color: var(--accent-color);
       text-decoration: none;
     }
+
     .hero {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      background: linear-gradient(135deg, #0a0a0a, var(--card-bg));
+      background: rgba(30, 30, 30, 0.6);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       margin: 20px 0;
       border-radius: 15px;
       padding: 20px;
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
+
     .hero-text {
       flex: 1;
       min-width: 250px;
     }
+
     .hero-text h2 {
       font-size: 1.8rem;
       color: var(--highlight-color);
     }
+
     .section {
       background: var(--card-bg);
       padding: 20px;
       margin: 20px 0;
       border-radius: 15px;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
     }
+
     .section h3 {
       color: var(--primary-color);
       border-bottom: 2px solid var(--primary-color);
       display: inline-block;
       padding-bottom: 5px;
     }
+
     .btn {
       background: var(--primary-color);
       color: #fff;
@@ -83,25 +104,41 @@
       border-radius: 5px;
       text-decoration: none;
       margin-left: 10px;
+      transition: all 0.2s ease-in-out;
     }
+
+    .btn:hover {
+      background: var(--accent-color);
+      transform: scale(1.05);
+    }
+
     ul {
       list-style: none;
       padding-left: 0;
     }
+
     ul li {
       margin: 10px 0;
     }
+
     footer {
       text-align: center;
       padding: 15px;
       border-top: 1px solid var(--card-bg);
     }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
   </style>
 </head>
-<body>
+<body onload="document.querySelectorAll('.section').forEach((s, i) => s.style.animationDelay = (0.2 * i) + 's')">
   <div class="container">
     <header>
-      <h1>Aryan Dutt</h1>
+      <h1>ARYΛN DUTT</h1>
       <p>Founder & AI Systems Architect | MIT CSAIL | CTO @ Stealth AI</p>
       <p>
         Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
