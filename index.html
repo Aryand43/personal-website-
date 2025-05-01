@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Dutt | AI Systems Engineer</title>
+  <title>Aryan Dutt | Founder & AI Systems Architect</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
@@ -20,7 +20,6 @@
       color: var(--text-color);
       margin: 0;
       line-height: 1.6;
-      overflow-x: hidden;
     }
     .container {
       max-width: 1200px;
@@ -47,6 +46,7 @@
     }
     .hero {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       background: linear-gradient(135deg, #0a0a0a, var(--card-bg));
@@ -56,7 +56,8 @@
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
     .hero-text {
-      max-width: 60%;
+      flex: 1;
+      min-width: 250px;
     }
     .hero-text h2 {
       font-size: 1.8rem;
@@ -101,17 +102,21 @@
   <div class="container">
     <header>
       <h1>Aryan Dutt</h1>
-      <p>CTO @ Stealth AI | MIT CSAIL Collaborator | AI Systems Engineer</p>
-      <p>Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
-         GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
-         LinkedIn: <a href="https://www.linkedin.com/in/aryan-dutt-" target="_blank">Aryan Dutt</a>
+      <p>Founder & AI Systems Architect | MIT CSAIL | CTO @ Stealth AI</p>
+      <p>
+        Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
+        GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
+        LinkedIn: <a href="https://www.linkedin.com/in/aryan-dutt-" target="_blank">Aryan Dutt</a>
       </p>
     </header>
 
     <div class="hero">
       <div class="hero-text">
-        <h2>I engineer real-world AI systems across HPC, healthtech, and finance.</h2>
-        <p>Currently working on federated NLP training, computer vision for microstructure mapping, and AI-powered diagnostic systems. Passionate about building deployable intelligence with global collaborators.</p>
+        <h2>I build frontier AI systems — federated LLMs, portfolio optimizers, and diagnostic CV pipelines.</h2>
+        <p>
+          Collaborating with MIT CSAIL, NTU, and deep-tech founders across Singapore, Korea, and the US. My work spans from
+          decentralized model training to vision-based analysis for sustainability, defense, and healthtech.
+        </p>
       </div>
       <img src="images/rocket-svgrepo-com.svg" alt="Rocket" width="160" />
     </div>
@@ -119,21 +124,21 @@
     <div class="section">
       <h3>Experience</h3>
       <ul>
-        <li><b>MIT CSAIL:</b> Research collaboration on HPC + AI for matrix decomposition.</li>
-        <li><b>NTU SC3DP:</b> Machine learning for additive manufacturing and microstructure optimization.</li>
-        <li><b>SEAQR:</b> AI for marine robotics and anomaly detection (Harvard-linked).</li>
-        <li><b>Stealth Startup (ACE.SG):</b> CTO building skincare diagnostic AI.</li>
-        <li><b>Tagit, BioMetallica, ServBridge:</b> AI, CV, and full-stack engineering roles in fintech and sustainability.</li>
+        <li><b>MIT CSAIL:</b> HPC + AI systems research on matrix decomposition and optimization.</li>
+        <li><b>NTU SC3DP:</b> CNNs for additive manufacturing, optimizing microstructures.</li>
+        <li><b>SEAQR:</b> ML dashboards and anomaly detection for autonomous marine robotics.</li>
+        <li><b>Stealth Startup (ACE.SG):</b> CTO building AI-powered skincare diagnostics platform.</li>
+        <li><b>BioMetallica, Tagit, ServBridge:</b> AI/CV engineering roles in e-waste recovery, fintech, and enterprise NLP.</li>
       </ul>
     </div>
 
     <div class="section">
       <h3>Featured Projects</h3>
       <ul>
-        <li><b>SmartScanGPT:</b> OCR + LLM system for generating investor-ready reports. <a class="btn" href="#">Demo</a></li>
-        <li><b>Portfolio Optimization:</b> Multi-asset Sharpe/Omega simulator with Monte Carlo. <a class="btn" href="https://github.com/Aryand43/Portfolio-Optimization">GitHub</a></li>
-        <li><b>V2C Captioning Pipeline:</b> Video + Image + LLM captioning via VideoLLM. <a class="btn" href="https://github.com/Aryand43/V2C-llm-project">GitHub</a></li>
-        <li><b>Whisper Federated Training:</b> Multi-node training using Flower + Whisper v3. <a class="btn" href="#">Coming Soon</a></li>
+        <li><b>SmartScanGPT:</b> OCR + LLM app converting scanned lab notes into structured reports. <a class="btn" href="#">Demo</a></li>
+        <li><b>Portfolio Optimization:</b> Multi-asset financial simulator with Monte Carlo + AI forecasts. <a class="btn" href="https://github.com/Aryand43/Portfolio-Optimization">GitHub</a></li>
+        <li><b>V2C Captioning Pipeline:</b> Video captioning using VideoLLM, Vid2Seq, and LLaMA. <a class="btn" href="https://github.com/Aryand43/V2C-llm-project">GitHub</a></li>
+        <li><b>Whisper Federated Training:</b> Training Whisper v3 across multiple nodes via Flower. <a class="btn" href="#">Coming Soon</a></li>
       </ul>
     </div>
 
@@ -147,7 +152,7 @@
     <div class="section">
       <h3>Certifications</h3>
       <ul>
-        <li>AI Essentials (Intel), Machine Learning Specialization (DeepLearning.AI)</li>
+        <li>DeepLearning.AI – Machine Learning Specialization, Intel – AI Essentials</li>
         <li>Portfolio Optimization, Cryptography, NLP with ChatGPT, Blockchain @ INSEAD</li>
       </ul>
     </div>
@@ -155,8 +160,8 @@
     <div class="section">
       <h3>Honors</h3>
       <ul>
-        <li>Recognized for top performance in IBHL CS + ITGS</li>
-        <li>Extended Essay Exhibition Distinction (Business + Strategy)</li>
+        <li>Top Performer in IBHL CS and ITGS</li>
+        <li>Extended Essay Exhibition Distinction (Apple x Shazam Acquisition Analysis)</li>
       </ul>
     </div>
 
