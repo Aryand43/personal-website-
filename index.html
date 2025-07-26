@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aryan Dutt | Founder & AI Systems Architect</title>
+  <title>Aryan Dutt | Systems Architect & AI Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --primary-color: #4caf50;
-      --background-color: #0a0a0a;
-      --text-color: #d0d0d0;
-      --card-bg: #1e1e1e;
-      --accent-color: #ff9800;
-      --highlight-color: #00e676;
+      --primary-color: #ff3c38;
+      --background-color: #0d1117;
+      --text-color: #c9d1d9;
+      --card-bg: #161b22;
+      --accent-color: #58a6ff;
+      --highlight-color: #f85149;
     }
-
     body {
       font-family: "Roboto", sans-serif;
       background-color: var(--background-color);
@@ -24,109 +23,67 @@
       -webkit-font-smoothing: antialiased;
       letter-spacing: 0.2px;
     }
-
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
-
     header {
       text-align: center;
       padding: 20px 0;
       border-bottom: 1px solid var(--card-bg);
     }
-
     header h1 {
       font-size: 3.5rem;
       color: var(--highlight-color);
-      animation: glow 1.5s infinite alternate;
-      letter-spacing: 2px;
+      letter-spacing: 1.5px;
       font-weight: 700;
     }
-
-    header p, footer p {
-      font-size: 1.1rem;
+    header p {
+      font-size: 1rem;
       font-family: "Source Code Pro", monospace;
     }
-
-    header a, footer a {
+    header a {
       color: var(--accent-color);
       text-decoration: none;
     }
-
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      background: rgba(30, 30, 30, 0.6);
-      backdrop-filter: blur(8px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      margin: 20px 0;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-    }
-
-    .hero-text {
-      flex: 1;
-      min-width: 250px;
-    }
-
-    .hero-text h2 {
-      font-size: 1.8rem;
-      color: var(--highlight-color);
-    }
-
     .section {
       background: var(--card-bg);
       padding: 20px;
       margin: 20px 0;
-      border-radius: 15px;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 0.8s ease forwards;
     }
-
     .section h3 {
       color: var(--primary-color);
       border-bottom: 2px solid var(--primary-color);
       display: inline-block;
       padding-bottom: 5px;
     }
-
     .btn {
       background: var(--primary-color);
       color: #fff;
       padding: 5px 15px;
-      border-radius: 5px;
+      border-radius: 4px;
       text-decoration: none;
       margin-left: 10px;
+      font-weight: bold;
       transition: all 0.2s ease-in-out;
     }
-
     .btn:hover {
       background: var(--accent-color);
       transform: scale(1.05);
     }
-
     ul {
       list-style: none;
       padding-left: 0;
     }
-
     ul li {
       margin: 10px 0;
     }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      border-top: 1px solid var(--card-bg);
-    }
-
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -139,7 +96,7 @@
   <div class="container">
     <header>
       <h1>ARYΛN DUTT</h1>
-      <p>Founder & AI Systems Architect | MIT CSAIL | CTO @ Stealth AI</p>
+      <p>Systems Architect | AI Engineer @ MIT CSAIL, NTU SC3DP</p>
       <p>
         Email: <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
         GitHub: <a href="https://github.com/Aryand43" target="_blank">Aryand43</a> |
@@ -147,65 +104,68 @@
       </p>
     </header>
 
-    <div class="hero">
-      <div class="hero-text">
-        <h2>I build frontier AI systems — federated LLMs, portfolio optimizers, and diagnostic CV pipelines.</h2>
-        <p>
-          Collaborating with MIT CSAIL, NTU, and deep-tech founders across Singapore, Korea, and the US. My work spans from
-          decentralized model training to vision-based analysis for sustainability, defense, and healthtech.
-        </p>
-      </div>
-      <img src="images/rocket-svgrepo-com.svg" alt="Rocket" width="160" />
+    <div class="section">
+      <h3>Profile</h3>
+      <p>Systems engineer and LLM infrastructure builder. I ship high-throughput models, optimize edge deployments, and write production-grade quant code. Always low-latency. Always high-impact.</p>
     </div>
 
     <div class="section">
-      <h3>Experience</h3>
+      <h3>Education</h3>
       <ul>
-        <li><b>MIT CSAIL:</b> HPC + AI systems research on matrix decomposition and optimization.</li>
-        <li><b>NTU SC3DP:</b> CNNs for additive manufacturing, optimizing microstructures.</li>
-        <li><b>SEAQR:</b> ML dashboards and anomaly detection for autonomous marine robotics.</li>
-        <li><b>Stealth Startup (ACE.SG):</b> CTO building AI-powered skincare diagnostics platform.</li>
-        <li><b>BioMetallica, Tagit, ServBridge:</b> AI/CV engineering roles in e-waste recovery, fintech, and enterprise NLP.</li>
+        <li><b>NTU (B.Comp. AI, Math Minor):</b> Algorithms, Probabilistic Models, Neural Nets</li>
+        <li><b>Y Combinator AI School (Invite-Only):</b> Talks w/ Elon, Satya, Sam, Andrew</li>
+        <li><b>IB Diploma:</b> 4 HLs. Founded Java + Rocket Clubs</li>
       </ul>
     </div>
 
     <div class="section">
-      <h3>Featured Projects</h3>
+      <h3>Execution</h3>
       <ul>
-        <li><b>SmartScanGPT:</b> OCR + LLM app converting scanned lab notes into structured reports. <a class="btn" href="#">Demo</a></li>
-        <li><b>Portfolio Optimization:</b> Multi-asset financial simulator with Monte Carlo + AI forecasts. <a class="btn" href="https://github.com/Aryand43/Portfolio-Optimization">GitHub</a></li>
-        <li><b>V2C Captioning Pipeline:</b> Video captioning using VideoLLM, Vid2Seq, and LLaMA. <a class="btn" href="https://github.com/Aryand43/V2C-llm-project">GitHub</a></li>
-        <li><b>Whisper Federated Training:</b> Training Whisper v3 across multiple nodes via Flower. <a class="btn" href="#">Coming Soon</a></li>
+        <li><b>MIT Julia Lab:</b> MoE SVDs. +3.5x speed under GPU constraint</li>
+        <li><b>NTU CCDS:</b> Jailbreak evaluations of LLM safety (arXiv:2404.02151)</li>
+        <li><b>SC3DP:</b> Optimizing DED powder flow with ML</li>
+        <li><b>SEAQR:</b> Mission-critical dashboard for autonomous ops</li>
+        <li><b>Tagit, BioMetallica, ServBridge:</b> AI/CV for fintech, e-waste, enterprise NLP</li>
+        <li><b>RevisionDojo (YC):</b> Backend infra for scraping & structuring datasets</li>
       </ul>
     </div>
 
     <div class="section">
-      <h3>Skills</h3>
-      <p><b>Languages:</b> Python, Java, C++, JavaScript, SQL, LaTeX</p>
-      <p><b>ML & AI:</b> Whisper, DeepSeek, PyTorch, TensorFlow, Sklearn, OpenCV, EasyOCR</p>
-      <p><b>Infra & Tools:</b> Streamlit, Jupyter, Node.js, Supabase, GitHub, Flower, AWS</p>
-    </div>
-
-    <div class="section">
-      <h3>Certifications</h3>
+      <h3>Projects</h3>
       <ul>
-        <li>DeepLearning.AI – Machine Learning Specialization, Intel – AI Essentials</li>
-        <li>Portfolio Optimization, Cryptography, NLP with ChatGPT, Blockchain @ INSEAD</li>
+        <li><b>SmartScanGPT:</b> OCR-to-whitepaper agent. Offline, optimized. <a class="btn" href="https://github.com/Aryand43/SmartScanGPT-" target="_blank">GitHub</a></li>
+        <li><b>Portfolio Opt:</b> Stress-tested financial simulator + AI forecasts <a class="btn" href="https://github.com/Aryand43/Portfolio-Optimization" target="_blank">GitHub</a></li>
+        <li><b>Causal Router:</b> MoE inference w/ counterfactual logic <a class="btn" href="https://github.com/Aryand43/causal-expert-routing-moe-llm" target="_blank">GitHub</a></li>
+        <li><b>HyperRoute:</b> IRS/MA routing sim for NYSE-SGX under 70ms <a class="btn" href="https://github.com/Aryand43/HyperRoute" target="_blank">GitHub</a></li>
       </ul>
     </div>
 
     <div class="section">
-      <h3>Honors</h3>
+      <h3>Stack</h3>
+      <p><b>Code:</b> Python, C++, Java, Julia, SQL, Bash, JavaScript</p>
+      <p><b>ML:</b> PyTorch, JAX, OpenCV, GPT APIs, NumPy, Pandas</p>
+      <p><b>Finance:</b> Sharpe, Omega, CVaR, Monte Carlo, Bloomberg</p>
+      <p><b>Systems:</b> TCPDump, CUDA, OpenMP, Streamlit, S3</p>
+    </div>
+
+    <div class="section">
+      <h3>Credentials</h3>
       <ul>
-        <li>Top Performer in IBHL CS and ITGS</li>
-        <li>Extended Essay Exhibition Distinction (Apple x Shazam Acquisition Analysis)</li>
+        <li>Stanford ML, DeepLearning.AI, Intel AI, Google CyberSec</li>
+        <li>INSEAD Web3, Coursera Fin, Bloomberg Terminal</li>
+        <li>TCPDump, Quantmod (R), SQL for Analysts</li>
       </ul>
     </div>
 
-    <footer>
-      <p>© 2025 Aryan Dutt | Built from scratch with HTML/CSS</p>
-      <p><a href="#top">Back to Top</a></p>
-    </footer>
+    <div class="section">
+      <h3>Recognition</h3>
+      <ul>
+        <li>Top 1% – HL CS, ITGS</li>
+        <li>Shazam M&A Analysis – Distinction</li>
+        <li>Sigma.ai – AI instructor (HS level)</li>
+        <li>MIT x OpenAI Hackathon Ambassador</li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
