@@ -1,86 +1,27 @@
-:root {
-  --background-color: #070809;
-  --card-bg: #0e1113;
-  --text-color: #e6e8eb;
-  --highlight-color: #f2f4f7;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --primary-color: #7aa2f7;
-  --accent-color: #4cc9f0;
-}
-body {
-  font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  margin: 0;
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-  letter-spacing: 0.2px;
-}
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-header {
-  text-align: center;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--card-bg);
-}
-header h1 {
-  font-size: 3.5rem;
-  color: var(--highlight-color);
-  letter-spacing: 1.5px;
-  font-weight: 700;
-}
-header p {
-  font-size: 1rem;
-  font-family: "Source Code Pro", monospace;
-}
-header a {
-  color: var(--accent-color);
-  text-decoration: none;
-}
-.section {
-  background: var(--card-bg);
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.8s ease forwards;
-}
-.section h3 {
-  color: var(--primary-color);
-  border-bottom: 2px solid var(--primary-color);
-  display: inline-block;
-  padding-bottom: 5px;
-}
-.btn {
-  background: var(--primary-color);
-  color: #fff;
-  padding: 5px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  margin-left: 10px;
-  font-weight: bold;
-  transition: all 0.2s ease-in-out;
-}
-.btn:hover {
-  background: var(--accent-color);
-  transform: scale(1.05);
-}
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-ul li {
-  margin: 10px 0;
-}
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
+@layer base {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+    @apply font-sans;
+    @apply tracking-[0.2px];
+  }
+
+  a {
+    @apply text-sky-300 underline-offset-4 transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-sky-200;
+  }
+
+  a:focus-visible {
+    @apply outline-none ring-2 ring-sky-400/60 ring-offset-2 ring-offset-slate-950;
   }
 }
-
