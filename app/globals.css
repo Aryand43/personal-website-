@@ -10,7 +10,6 @@
   body {
     @apply bg-slate-950 text-slate-200 antialiased;
     @apply font-sans;
-    @apply tracking-[0.2px];
   }
 
   a {

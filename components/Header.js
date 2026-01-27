@@ -1,16 +1,16 @@
 export default function Header() {
   return (
-    <header className="py-10 sm:py-14">
+    <header className="py-10">
       <div className="mx-auto max-w-3xl text-center">
-        <h1 className="text-balance text-4xl font-semibold tracking-[0.22em] text-slate-50 sm:text-6xl">
+        <h1 className="text-balance text-5xl font-semibold tracking-widest text-slate-50 sm:text-6xl">
           ARYΛN DUTT
         </h1>
-        <p className="mt-4 font-mono text-sm text-slate-300 sm:text-base">
-          Data Science &amp; AI @ NTU | Researcher @ MIT Julia Lab
+        <p className="mt-4 font-mono text-sm text-slate-300">
+          Data Science &amp; AI @ NTU | Researcher @ MIT JuliaLab
         </p>
-        <p className="mt-3 text-xs text-slate-400 sm:text-sm">
+        <p className="mt-2 text-xs text-slate-400">
           Singapore | Email:{" "}
-          <a href="mailto:aryan.dutt43@gmail.com">aryan.dutt43@gmail.com</a> |
+          <a href="mailto:aryan102004@gmail.com">aryan102004@gmail.com</a> |
           LinkedIn:{" "}
           <a href="https://www.linkedin.com/in/aryan-dutt-" target="_blank">
             aryan-dutt-
