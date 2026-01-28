@@ -24,6 +24,26 @@ export default function Page() {
                 Tailwind CSS, JavaScript, React.js
               </li>
               <li>
+                <b className="font-semibold text-slate-100">Research:</b>{" "}
+                Neuro-symbolic AI, neural Lyapunov stability, region-ofattraction
+                (RoA) estimation, aligned neuro-symbolic LLM safety
+              </li>
+              <li>
+                <b className="font-semibold text-slate-100">Methods:</b> Semantic
+                normalization, concept extraction, graph-based reasoning,
+                RoA-aware optimization, convergence-verified training
+              </li>
+              <li>
+                <b className="font-semibold text-slate-100">Systems:</b> Verifier
+                design (hypergraph contradiction detection, entropy-based
+                pruning, differentiable rerouting), benchmarking against GPT-4o,
+                Claude, and DeepSeek
+              </li>
+              <li>
+                <b className="font-semibold text-slate-100">Ecosystem:</b>{" "}
+                NeuralLyapunov.jl (SciML, Julia)
+              </li>
+              <li>
                 <b className="font-semibold text-slate-100">Languages:</b>{" "}
                 English (Native or Bilingual), Spanish (Elementary), Hindi
                 (Limited Working)
